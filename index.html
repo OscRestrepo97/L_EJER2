@@ -22,14 +22,14 @@
                 + 'contributors', maxZoom: 18,
         });
         var map = L.map('map', {
-            center: [1.6205613441047126, -75.60423950674547],
+            center: [1.6201816037286574, -75.60988426208498],
             layers: osm,
             zoom: 4,
             scrollWheelZoom: true, tiled: true,
         });
         L.control.scale().addTo(map);
         var marker = L.marker(
-            [1.6205613441047126, -75.60423950674547]
+            [1.620214, -75.604252]
 
         ).addTo(map)
             .bindPopup("Universidad de la Amazonia")
@@ -48,7 +48,8 @@
             [1.6144852615870866, -75.6135722876548],
             [1.6151931947288636, -75.6137121261623]
         ]).addTo(map)
-            .bindPopup('Parque Santander');
+            .bindPopup('Parque Santander')
+            .openPopup();
 
 
         /* Cesar España  */
@@ -76,12 +77,12 @@
             .addTo(map)
             .bindPopup('Cesar España');
 
-        /* Oscar Restrepo  */
-        var marker4 = L.marker([1.612466, -75.601951], {
+        /* Casa   */
+        var marker4 = L.marker([1.60918570614428, -75.60896606276555], {
             draggable: false,
             title: 'informacion'
         }).addTo(map)
-            .bindPopup('Oscar Restrepo ')
+            .bindPopup('Cesar españa   ')
             .openPopup();
 
     </script>
